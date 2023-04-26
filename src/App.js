@@ -1,6 +1,15 @@
 import Welcome from "./Components/Welcome";
+import React from "react";
+class App extends React.Component{
 
-function App(){
- return <Welcome name = 'Paolo'/>
+  render(){
+    return (
+      <>
+      <Welcome/>
+      </>
+     
+    )
+  }
+ 
 }
 export default App;
