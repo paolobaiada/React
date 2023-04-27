@@ -7,7 +7,7 @@ class Welcome extends React.Component{
         Welcome.defaultProps = {
             name: 'Paolo'
         };
-        return <p>Welcome, {this.props.name} your age is {this.props.age}</p>
+        return <p>Welcome, <strong>{this.props.name}</strong>  your age is {this.props.age}</p>
     }
 }
 
