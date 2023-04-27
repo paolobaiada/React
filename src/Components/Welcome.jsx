@@ -6,7 +6,7 @@ class Welcome extends React.Component{
         
        
         if (this.props.age > 18) {
-            return <p>Welcome, <strong>{this.props.name}</strong>  your age is {this.props.age}</p>
+            return <p>Welcome, {this.props.name}  your age is {this.props.age}</p>
         }
        
     }
