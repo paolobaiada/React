@@ -1,8 +1,11 @@
 import React from "react";
-import Welcome from "./Welcome";
 class Age extends React.Component{
 render(){
-    return <p><Welcome age={19}/></p>
+    if (this.props.age > 18) {
+        return <p>your age is {this.props.age}</p>
+    }
+    else return <p>You are very young!</p>
+   
 }
 }
 export default Age;
