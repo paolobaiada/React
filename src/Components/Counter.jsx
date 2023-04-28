@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-function Counter(){
+function Counter(props){
     let [count,setCount] = useState(0);
   
 return (
@@ -11,7 +11,7 @@ return (
 )
 function add(){
   setInterval(() =>
-    setCount(count += 1),1000
+    setCount(count += props.incrementAmount),props.incrementIntervall
    
   )
   return setCount;
