@@ -1,11 +1,11 @@
-import {useState} from "react";
 
+import Counter from "./Counter";
 function CounterDisplay(props){
-    let [count,setCount] = useState(props.number);
+   
   
 return (
   <>
-  <h1>{count}</h1>
+  <h1><Counter count= {0}/></h1>
   </>
 )
 }
