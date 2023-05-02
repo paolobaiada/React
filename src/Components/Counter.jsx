@@ -6,16 +6,16 @@ function Counter(props){
 return (
   <>
   <h1>{props.count}</h1>
-  <button onClick={add}>Increment</button>
   </>
-)
-function add(){
+) 
+ 
   setInterval(() =>
     setCount(count += props.incrementAmount),props.incrementIntervall
    
   )
-  return setCount;
-}
+ return {count}
 
 }
+
+
 export default Counter;
