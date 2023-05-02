@@ -1,11 +1,11 @@
 
 import Counter from "./Counter";
-function CounterDisplay(props){
+function CounterDisplay(){
    
   
 return (
   <>
-  <h1><Counter count= {0}/></h1>
+  <h1><Counter/></h1>
   </>
 )
 }

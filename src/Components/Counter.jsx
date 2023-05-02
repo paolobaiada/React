@@ -1,19 +1,19 @@
 import {useState} from "react";
 
 function Counter(props){
-    let [count,setCount] = useState(0);
-  
+    const [count,setCount] = useState(0);
+
+    setInterval(() =>{
+      setCount((count) => count + props.incrementAmount);
+    },props.incrementIntervall);
+ 
 return (
   <>
-  <h1>{props.count}</h1>
+  <h1>{count}</h1>
   </>
 ) 
  
-  setInterval(() =>
-    setCount(count += props.incrementAmount),props.incrementIntervall
-   
-  )
- return {count}
+  
 
 }
 

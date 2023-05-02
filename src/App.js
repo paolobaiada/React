@@ -2,7 +2,6 @@ import Welcome from "./Components/Welcome";
 import Age from "./Components/Age";
 import React from "react";
 import Counter from "./Components/Counter";
-import CounterDisplay from "./Components/CounterDisplay";
 class App extends React.Component{
 
   render(){
@@ -12,7 +11,6 @@ class App extends React.Component{
      <Welcome age = {64} name = 'John'/> 
     <Age />
     <Counter incrementAmount = {1} incrementIntervall = {1000}/>
-    <CounterDisplay/>
     </>
    
    )
