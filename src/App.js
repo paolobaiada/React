@@ -3,6 +3,7 @@ import Age from "./Components/Age";
 import React from "react";
 /* import Counter from "./Components/Counter"; */
 import ClickCounter from "./Components/ClickCounter";
+import ClickTracker from "./Components/ClickTracker";
 class App extends React.Component{
 
   render(){
@@ -13,6 +14,7 @@ class App extends React.Component{
     <Age />
      {/* <Counter incrementAmount = {1} incrementIntervall = {1000}/>  */}
     <ClickCounter />
+    <ClickTracker/>
     </>
    
    )
