@@ -12,7 +12,7 @@ class App extends React.Component{
       <Welcome age = {64} name = 'John'/>  
     <Age />
     <Counter incrementAmount = {1} incrementIntervall = {1000}/>
-    
+   
     {/* <InteractiveWelcome/> */}
     </>
    
