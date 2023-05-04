@@ -11,11 +11,11 @@ class App extends React.Component{
    
    return (
     <>
-     <Welcome age = {64} name = 'John'/> 
-    <Age />
+     {/* <Welcome age = {64} name = 'John'/> 
+    <Age /> */}
      {/* <Counter incrementAmount = {1} incrementIntervall = {1000}/>  */}
-    <ClickCounter />
-    <ClickTracker/>
+   {/*  <ClickCounter />
+    <ClickTracker/> */}
     <InteractiveWelcome/>
     </>
    

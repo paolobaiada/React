@@ -8,8 +8,9 @@ const InteractiveWelcome = () => {
     }
     return (
         <>
-        <input type="text" value={input}/>
-        <welcome name = {input}/>
+        <input type="text" value={input} onChange={change}/>
+      
+         <Welcome name = {input}/>
         </>
     )
 }
