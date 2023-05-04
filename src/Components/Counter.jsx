@@ -14,6 +14,7 @@ function Counter(props){
 
     return (
       <>
+     
       <CounterDisplay/>
       <button onClick={add}>Increment</button>
       </>
