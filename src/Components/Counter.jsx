@@ -6,7 +6,7 @@ function Counter(props){
 
     function add(){
       setInterval(() =>{
-        setCount(props.count + props.incrementAmount);
+        setCount(count + props.incrementAmount);
       },props.incrementIntervall);
       
         
