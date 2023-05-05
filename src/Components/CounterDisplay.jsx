@@ -1,12 +1,12 @@
 
 
-import Counter from "./Counter";
-function CounterDisplay(){
+
+function CounterDisplay(props){
     
   
 return (
   <>
- <h1><Counter/></h1>
+ <h1>{props.count}</h1>
   </>
 )
 }
