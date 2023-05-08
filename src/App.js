@@ -1,8 +1,6 @@
 
 import React from "react";
-/* import Counter from "./Components/Counter"; */
-/* import InteractiveWelcome from "./Components/InteractiveWelcome"; */
-import Uncontrolled from "./Components/Uncontrolled";
+import ToDoList from "./Components/ToDoList";
 class App extends React.Component{
 
   render(){
@@ -10,29 +8,13 @@ class App extends React.Component{
    return (
     <>
      
-     {/* <Counter incrementAmount = {1} incrementIntervall = {1000}/> */}
-    {/* <InteractiveWelcome/>  */}
-    <Uncontrolled/>
+    <ToDoList/>
+    
     </>
    
    )
     
-   
-   
-   
-   
-   
-  
-     
-    
 
-
-    
-    
-    
-       
-     
-    
   }
  
 }
