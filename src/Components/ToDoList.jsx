@@ -6,7 +6,7 @@ function TodoList() {
 
   function addItem() {
     setItems([...items, text]);
-    setText('');
+    
   }
 
   return (
