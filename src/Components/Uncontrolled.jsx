@@ -1,6 +1,11 @@
-import React from "react"
+import React, { createRef } from "react"
 
 class Uncontrolled extends React.Component{
+   ref = createRef();
+   componentDidMount(){
+     this.ref.current.focus();
+    
+   }
    handleForm = (event) =>{
     event.preventDefault()
     const userName = event.target.elements.username.value;
@@ -11,10 +16,9 @@ class Uncontrolled extends React.Component{
     return(
       <>
       <form onSubmit={this.handleForm}>
-      <input type="username" name="username" />
+      <input type="username" name="username" ref={this.ref}/>
       <input type="password" name="password" />
       <button type="submit">Login</button>
-    
       </form>
      
       </>
