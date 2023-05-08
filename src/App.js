@@ -2,7 +2,7 @@
 import React from "react";
 /* import Counter from "./Components/Counter"; */
 /* import InteractiveWelcome from "./Components/InteractiveWelcome"; */
-import Login from "./Components/Login";
+import Uncontrolled from "./Components/Uncontrolled";
 class App extends React.Component{
 
   render(){
@@ -12,7 +12,7 @@ class App extends React.Component{
      
      {/* <Counter incrementAmount = {1} incrementIntervall = {1000}/> */}
     {/* <InteractiveWelcome/>  */}
-    <Login/>
+    <Uncontrolled/>
     </>
    
    )
