@@ -12,6 +12,10 @@ function TodoList() {
     setItems([]);
     setText('');
   }
+  function remove(item){
+    const removeItem = items.filter(index => index !== item)
+    setItems(removeItem)
+  }
 
   return (
     <div>
@@ -19,13 +23,25 @@ function TodoList() {
       <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
       <button onClick={addItem}>Add</button>
       <button onClick={reset}>Reset</button>
+      
       <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
+        {items.map((item, index) => {
+          return (
+            <>
+            <li key={index}>{item}</li>
+            <button onClick={()=> remove(item)}>invio</button>
+            </>
+           
+          )
+          
+        }
+        
+         
+          
+        )}
         
       </ul>
     </div>
   );
-}
+      }
 export default TodoList;
