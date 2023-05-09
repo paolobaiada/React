@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function TodoList() {
+function TodoList(props) {
   const [items, setItems] = useState([]);
   const [text, setText] = useState('');
 
@@ -24,23 +24,9 @@ function TodoList() {
       <button onClick={addItem}>Add</button>
       <button onClick={reset}>Reset</button>
       
-      <ul>
-        {items.map((item, index) => {
-          return (
-            <>
-            <li key={index}>{item}</li>
-            <button onClick={()=> remove(item)}>invio</button>
-            </>
-           
-          )
-          
-        }
-        
-         
-          
-        )}
-        
-      </ul>
+     
+        {props.render(items,remove)}
+      
     </div>
   );
       }
