@@ -1,10 +1,10 @@
 
-import { useContext } from "react"
+
 import { LanguageContext } from "../LanguageContext"
 
  const DisplayLanguage = () => {
-    const language = useContext(LanguageContext)
-return <p>{language}</p>
+    
+return <LanguageContext.Consumer>{(language) => <h1>{language}</h1>}</LanguageContext.Consumer>
 }
  
 
