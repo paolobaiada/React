@@ -1,22 +1,28 @@
-import {useState} from "react";
-import CounterDisplay from "./CounterDisplay";
+import {useEffect, useState} from "react";
 
-function Counter(props){
+
+function Counter(){
     const [count,setCount] = useState(0);
 
-    function add(){
-      setInterval(() =>{
-        setCount(count + props.incrementAmount);
-      },props.incrementIntervall);
+   
+      useEffect(() => {
       
-        
-    }
+        const interval = setInterval(() =>{
+           setCount((prev)=> prev + 1);
+         },1000);
+         
+           return () => clearInterval(interval)
+       
+     })
+    
+   
+    
 
     return (
       <>
      
-      <CounterDisplay/>
-      <button onClick={add}>Increment</button>
+      <h1>{count}</h1>
+      <button>Increment</button>
       </>
     )
     }

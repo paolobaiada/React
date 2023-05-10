@@ -1,15 +1,8 @@
-import ClickCounter from "./Components/ClickCounter";
-
-
-
-
-
+import Counter from "./Components/Counter";
   
   function App() {
     return (
-    <ClickCounter onCounterChange = {(count) => {
-      console.log("The Counter value is:", count);
-    }}/>
+    <Counter/>
     )
     }
     
