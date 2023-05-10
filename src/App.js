@@ -1,11 +1,12 @@
-import ClickCounter from "./Components/ClickCounter";
+import Login from "./Components/Login";
+
 
 
 
   
   function App() {
     return (
-      <ClickCounter/>
+    <Login/>
      )
     }
     
