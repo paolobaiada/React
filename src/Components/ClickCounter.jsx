@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react"
 
- const ClickCounter = () => {
+ const ClickCounter = (props) => {
    const [count,setCount] = useState(0)
 
    const handleCounter = () => {
        setCount(count + 1)
    }
-   
+   function onCounterChange(count){
+    console.log("The Counter value is:", count)
+   }
    useEffect(() => {
-  onCounterChange(count)
+  props.render(count,onCounterChange)
     
    },[count])
 return (
