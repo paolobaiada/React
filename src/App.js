@@ -1,4 +1,5 @@
-import Login from "./Components/Login";
+import ClickCounter from "./Components/ClickCounter";
+
 
 
 
@@ -6,7 +7,11 @@ import Login from "./Components/Login";
   
   function App() {
     return (
-    <Login/>
+    <ClickCounter render={() => {
+      function onCounterChange(count){
+        console.log("The Counter value is:", count)
+       }
+    }}/>
      )
     }
     
