@@ -1,6 +1,6 @@
 
 
-import useCounter from "./useCounter";
+import useCounter from "../useCounter";
 
 function Counter(){
     const { count,increment,decrement,reset } = useCounter(0);
