@@ -9,7 +9,7 @@ const ClickCounter = (props) => {
   
   useEffect(() => {
     props.onCounterChange(count);
-  });
+  },[count]);
   return (
     <div>
       <button onClick={handleCounter}>invio</button>
