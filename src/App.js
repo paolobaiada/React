@@ -1,8 +1,9 @@
-import Counter from "./Components/Counter";
+
+import GithubUser from "./Components/GithubUser";
   
   function App() {
     return (
-    <Counter/>
+   <GithubUser username="paolobaiada"/>
     )
     }
     
