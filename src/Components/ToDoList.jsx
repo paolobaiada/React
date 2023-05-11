@@ -12,9 +12,10 @@ function TodoList() {
     setItems([]);
     setText('');
   }
-  function remove(item){
-    const removeItem = items.filter(index => index !== item)
-    setItems(removeItem)
+  function remove(index){
+    const updateItems = [...items]
+    updateItems.splice(index,1)
+    setItems(updateItems)
   }
 
   return (
@@ -29,7 +30,7 @@ function TodoList() {
           return (
             <>
             <li key={index}>{item}</li>
-            <button onClick={()=> remove(item)}>invio</button>
+            <button onClick={()=> remove(index)}>invio</button>
             </>
            
           )
