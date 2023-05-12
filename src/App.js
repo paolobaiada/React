@@ -1,11 +1,12 @@
+import CarDetails from "./Components/CarDetails";
 
-import GithubUser from "./Components/GithubUser";
+
 
   
   function App() {
     
     return (
-   <GithubUser username="paolobaiada"/>
+   <CarDetails/>
     )
     }
     
