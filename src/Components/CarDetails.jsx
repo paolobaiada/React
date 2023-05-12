@@ -1,17 +1,35 @@
-const CarDetails = () => {
+import { useRef } from "react";
+import "../CarDetails.css";
+const CarDetails = (props) => {
+  const brand = useRef(props.brand);
+  const model = useRef();
+  const year = useRef();
+  const color = useRef();
   return (
-    <div>
-      <form>
-        <label htmlFor="">Brand:</label>
+    <form>
+      <p>
+        <label htmlFor="brand">Brand:</label>
+        <input type="text" name="brand" value={props.brand} />
+      </p>
+      <p>
+        <label htmlFor="model" name="model">
+          Model:
+        </label>
         <input type="text" />
-        <label htmlFor="">Model:</label>
+      </p>
+      <p>
+        <label htmlFor="year" name="year">
+          Year:
+        </label>
         <input type="text" />
-        <label htmlFor="">Year:</label>
+      </p>
+      <p>
+        <label htmlFor="color" name="color">
+          Color:
+        </label>
         <input type="text" />
-        <label htmlFor="">Color:</label>
-        <input type="text" />
-      </form>
-    </div>
+      </p>
+    </form>
   );
 };
 export default CarDetails;
