@@ -2,10 +2,17 @@
 import useGithubUser from "../useGithubUser";
 
 const GithubUser = ({username}) => {
-  const {data} = useGithubUser({username})
+  const {data,fetchData,loading,error} = useGithubUser({username})
 
- 
-  
+ if (loading) {
+  return "loading..."
+ }
+  if (error) {
+    return "error!"
+  }
+  if(!data) {
+    return "is empty!"
+  }
 try {
     return (
         <div>
