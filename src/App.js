@@ -1,5 +1,6 @@
+import Form from "./Components/Form";
 
-import Counter from "./Components/Counter";
+
 
   
   function App() {
@@ -7,7 +8,7 @@ import Counter from "./Components/Counter";
     
     return (
       <>
-       <Counter/>
+       <Form/>
       </>
     );
   }
