@@ -1,12 +1,14 @@
-import { useState } from "react";
+
+import DisplayLanguage from "./Components/DisplayLanguage";
+import { LanguageContext } from "./LanguageContext";
 
 
 
   
   function App() {
-    const [language,setLanguage] = useState()
+ 
     return (
-      <LanguageContext.Provider value={language}>
+      <LanguageContext.Provider value="it">
       <DisplayLanguage />
     </LanguageContext.Provider>
     )
