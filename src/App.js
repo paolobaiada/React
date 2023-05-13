@@ -1,11 +1,14 @@
-import CarDetails from "./Components/CarDetails";
+import { useState } from "react";
+
 
 
   
   function App() {
-    
+    const [language,setLanguage] = useState()
     return (
-   <CarDetails brand = "ferrari" model="458italia" year= {2010} color="red"/>
+      <LanguageContext.Provider value={language}>
+      <DisplayLanguage />
+    </LanguageContext.Provider>
     )
     }
     
