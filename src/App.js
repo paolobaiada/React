@@ -1,34 +1,12 @@
-import Filteredlist from "./Components/FilteredList";
+import { Route, Routes } from "react-router-dom";
+import Counter from "./Components/Counter";
 
-
-
-
-  
-  function App() {
-    const person = [
-      {
-        name: "paolo",
-        id: 1,
-        age: 19,
-      },
-      {
-        name: "luca",
-        id: 2,
-        age: 15,
-      },
-      {
-        name: "giulia",
-        id: 3,
-        age: 21,
-      },
-    ];
-    return (
-   
-   <Filteredlist list= {person}/>
-    )
-    }
-    
-  
-
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Counter />} />
+    </Routes>
+  );
+}
 
 export default App;
