@@ -9,8 +9,8 @@ function App() {
       <Link to="/Counter">Counter</Link>
       <Link to="/ShowGithubUser">ShowGithubUser</Link>
       <Routes>
-      <Route path="/" element={<Counter/>} />
-      <Route path="/ShowGithubUse" element={<ShowGithubUser />} />
+      <Route path="/Counter" element={<Counter/>} />
+      <Route path="/ShowGithubUser" element={<ShowGithubUser />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     </div>
