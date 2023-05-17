@@ -6,7 +6,7 @@ import NotFound from "./Components/NotFound";
 function App() {
   return (
     <div>
-      <Link to="/">Counter</Link>
+      <Link to="/Counter">Counter</Link>
       <Link to="/ShowGithubUser">ShowGithubUser</Link>
       <Routes>
       <Route path="/" element={<Counter/>} />
