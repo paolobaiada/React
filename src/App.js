@@ -5,10 +5,10 @@ import ShowGithubUser from "./Components/ShowGithubUser";
 function App() {
   return (
     <div>
-      <Link to="/">Counter</Link>
+      <Link to="/Counter">Counter</Link>
       <Link to="/ShowGithubUser">ShowGithubUser</Link>
       <Routes>
-        <Route path="/" element={<Counter />} />
+        <Route path="/Counter" element={<Counter />} />
         <Route path="/ShowGithubUser" element={<ShowGithubUser />} />
       </Routes>
     </div>
