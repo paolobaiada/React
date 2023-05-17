@@ -1,5 +1,5 @@
 import { useState } from "react";
-import GithubUser from "./GithubUser";
+import { Link } from "react-router-dom";
 
 const GithubUserlist = () => {
   const [name, setName] = useState("");
@@ -20,8 +20,8 @@ const GithubUserlist = () => {
       <input type="text" onChange={handleChange} value={name}/>
       <button onClick={handleAddName}>invio</button>
       
-        <GithubUser username={name} />
-      
+       {/*  <GithubUser username={name} /> */}
+      <Link to="/ShowGithubUser">ShowGithubUser</Link>
     </div>
   );
 };
