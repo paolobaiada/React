@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import "../CarDetails.css";
 
 const CarDetails = (props) => {
@@ -6,30 +6,13 @@ const CarDetails = (props) => {
   const model = useRef();
   const year = useRef();
   const color = useRef();
-
-/* function handleChange(event){
-  if (event.target.name === "brand") {
-    brand.current.value = event.target.value
-const inputValue = brand.current.value
-console.log(inputValue)
-  }
-  else if (event.target.name === "model") {
-    model.current.value = event.target.value
-    const inputValue = model.current.value
-    console.log(inputValue)
-  }
-  else if (event.target.name === "year") {
-    year.current.value = event.target.value
-    const inputValue = year.current.value
-    console.log(inputValue)
-  }
-  else 
-    color.current.value = event.target.value
-    const inputValue = color.current.value
-    console.log(inputValue)
   
-
-} */
+useEffect(() => {
+  brand.current.reset()
+  model.current.reset()
+  year.current.reset()
+  color.current.reset()
+},[props.brand,props.model,props.year,props.color])
   
   return (
     <div>
