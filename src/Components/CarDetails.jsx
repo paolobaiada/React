@@ -1,47 +1,36 @@
 import { useEffect, useRef } from "react";
 import "../CarDetails.css";
 
-const CarDetails = (props) => {
-  const brand = useRef();
-  const model = useRef();
-  const year = useRef();
-  const color = useRef();
+const CarDetails = ({initialData}) => {
+ const carRef = useRef()
   
 useEffect(() => {
-  brand.current.reset()
-  model.current.reset()
-  year.current.reset()
-  color.current.reset()
-},[props.brand,props.model,props.year,props.color])
+  carRef.current.reset()
+},[initialData])
   
   return (
     <div>
-  <form>
+  <form ref={carRef}>
       <p>
         <label htmlFor="brand">Brand:</label>
-        <input type="text" name="brand" ref={brand} defaultValue={props.brand} />
+        <input type="text" name="brand" defaultValue={initialData.brand} />
       </p>
       <p>
         <label htmlFor="model">Model:</label>
-        <input type="text" name="model" ref={model} defaultValue={props.model} />
+        <input type="text" name="model" defaultValue={initialData.model} />
       </p>
       <p>
         <label htmlFor="year">Year:</label>
-        <input type="text" name="year" ref={year} defaultValue={props.year} />
+        <input type="text" name="year" defaultValue={initialData.year} />
       </p>
       <p>
         <label htmlFor="color">Color:</label>
-        <input type="text" name="color" ref={color} defaultValue={props.color} />
+        <input type="text" name="color" defaultValue={initialData.color} />
       </p>
     </form>
     </div>
   
   );
 };
-CarDetails.defaultProps = {
-  brand: "lamborghini",
-  model: "aventador",
-  yaer: "2015",
-  color: "yellow"
-};
+
 export default CarDetails;
