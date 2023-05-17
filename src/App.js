@@ -10,7 +10,7 @@ function App() {
       <Link to="/Counter">Counter</Link>
       <Link to="/ShowGithubUser">ShowGithubUser</Link>
       <Routes>
-      <Route path="/" element={<Counter/>} />
+      <Route path="/Counter" element={<Counter/>} />
       <Route path="/ShowGithubUser" element={<ShowGithubUser />} />
       <Route path="/GithubUserList" element={<GithubUserlist/>}/>
       <Route path="*" element={<NotFound />} />
