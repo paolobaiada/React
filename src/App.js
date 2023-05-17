@@ -1,13 +1,21 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,Link, Router } from "react-router-dom";
 import Counter from "./Components/Counter";
 import ShowGithubUser from "./Components/ShowGithubUser";
+import { link } from "fs";
+import { directive } from "@babel/types";
 
 function App() {
   return (
-    <Routes>
+<Router>
+  <link to="/">Counter</link>
+ <link to= "/:username">ShowGithubUser</link>
+<Routes>
       <Route path="/" element={<Counter />} />
-      <Route path="/:username" Component={ShowGithubUser}/>
+      <Route path="/:username" Component={<ShowGithubUser/>}/>
     </Routes>
+</Router>
+
+   
   );
 }
 
