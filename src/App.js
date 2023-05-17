@@ -7,7 +7,7 @@ import GithubUserlist from "./Components/GitHubUserList";
 function App() {
   return (
     <div>
-      <Link to="/">Counter</Link>
+      <Link to="/Counter">Counter</Link>
       <Link to="/ShowGithubUser">ShowGithubUser</Link>
       <Routes>
       <Route path="/" element={<Counter/>} />
