@@ -6,7 +6,7 @@ function App() {
   return (
     <Routes>
       <Route path="/Counter" element={<Counter />} />
-      <Route path="/ShowGithubUser" Component={<ShowGithubUser/>}/>
+      <Route path="/users/:username" element ={<ShowGithubUser/>}/>
     </Routes>
   );
 }
