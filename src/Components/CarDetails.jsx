@@ -34,3 +34,4 @@ useEffect(() => {
 };
 
 export default CarDetails;
+
