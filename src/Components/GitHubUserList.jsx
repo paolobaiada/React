@@ -21,6 +21,7 @@ const GithubUserlist = () => {
       <button onClick={handleAddName}>invio</button>
       
        {/*  <GithubUser username={name} /> */}
+      
       <Link to="/ShowGithubUser">ShowGithubUser</Link>
     </div>
   );
