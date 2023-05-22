@@ -21,10 +21,13 @@ const useGithubUser = ({ username }) => {
       console.log("Error:", error);
     }
   };
+  const fetching = () => {
+    fetchData();
+  }
   useEffect(() => {
     fetchData();
   }, [username]);
 
-  return { data, fetchData,loading,error };
+  return { data, fetching,loading,error };
 };
 export default useGithubUser;
