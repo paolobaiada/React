@@ -17,10 +17,15 @@ const GithubUserlist = () => {
 
   return (
     <div>
-      <input type="text" onChange={handleChange} value={name}/>
-      <button onClick={handleAddName}>invio</button>
+     {/*  <input type="text" onChange={handleChange} value={name}/>
+      <button onClick={handleAddName}>invio</button> */}
       
         <GithubUser username={name} />
+        {array.map((el) => {
+       return <li key={el}>
+          <Link to={`/users/${el}`}>{el}</Link>
+        </li>;
+      })}
       
     </div>
   );
