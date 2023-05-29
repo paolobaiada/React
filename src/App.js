@@ -6,7 +6,6 @@ import GithubUserlist from "./Components/GitHubUserList";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<h1>Aggiungi un utente e selezionalo</h1>} />
       <Route path="/Counter" element={<Counter />} />
       <Route path="/users" element={<GithubUserlist />}>
         <Route index element={<h1>Aggiungi un utente e selezionalo</h1>} />
