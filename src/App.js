@@ -12,7 +12,9 @@ function App() {
       <Routes>
       <Route path="/Counter" element={<Counter/>} />
       <Route path="users/ShowGithubUser" element={<ShowGithubUser />} />
-      <Route path="/GithubUserList" element={<GithubUserlist/>}/>
+      <Route path="/users" element={<GithubUserlist/>}>
+        <Route path=":username" element={<ShowGithubUser/>}/>
+      </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
     </div>
